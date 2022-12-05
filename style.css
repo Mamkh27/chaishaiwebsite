@@ -49,15 +49,11 @@
   text-align: center;
   text-decoration: none;
   border-radius:45px;
-
- 
 }
 
 .ChaiShaiLogo{
   max-width: 100%;
   height: auto;
-
-  
 }
 
 .boba-landing img {
@@ -73,8 +69,6 @@ flex-direction: row;
 align-items: center;
 margin: 0;
 padding: 0;
-
-
 }
 
 .page-container img {
@@ -94,10 +88,6 @@ padding: 0;
 
     
     position: relative;
-
-
-    
-
 }
 
 .categories-container button{
@@ -110,15 +100,12 @@ padding: 0;
     color: white;
 }
  
-
 .page-container {
     /* background-color: #FFC325; */
     font-family: "Jeju Gothic", sans-serif;
     width: 100%;
     margin: 0;
-    padding: 0;
-
-    
+    padding: 0;   
 }
 
 .page-container h3 {
@@ -130,36 +117,36 @@ padding: 0;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
+
 .page-container img {
     border-radius: 50%;
 }
+
 .milk-tea-items{
     display: flex;
 }
 
 .menu-item img{
     width: 200px;
-    height: 200px;
- 
+    height: 200px; 
 }
+
 .menu-item{
     display: inline-block;
     text-align: center;
     /* flex: 1 0 30%;
     margin: 5px */
    
-    box-sizing: border-box;
-   
+    box-sizing: border-box;   
 }
+
 .signature-items, .milk-tea-items, .hot-drink-items, .fruit-items{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .main-menu{
