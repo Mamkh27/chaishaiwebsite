@@ -83,7 +83,8 @@ padding: 0;
 }
 
 .categories-container{
-   
+    
+    
     background-color: #ddac0b;
     height: 4em;
     justify-content: space-around;
@@ -108,13 +109,7 @@ padding: 0;
     font-size: 1.2em;
     color: white;
 }
-.categories-container ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    list-style: none;
-}  
+ 
 
 .page-container {
     /* background-color: #FFC325; */
@@ -122,6 +117,7 @@ padding: 0;
     width: 100%;
     margin: 0;
     padding: 0;
+
     
 }
 
@@ -149,12 +145,23 @@ padding: 0;
  
 }
 .menu-item{
-    vertical-align: top;
     display: inline-block;
     text-align: center;
+    /* flex: 1 0 30%;
+    margin: 5px */
+   
+    box-sizing: border-box;
+   
 }
-.signature-items, .milk-tea-items, .hot-drink-items{
+.signature-items, .milk-tea-items, .hot-drink-items, .fruit-items{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
+.main-menu{
+    display: block;
+}
