@@ -60,3 +60,42 @@
   max-width: 100%;
   height: auto;
 }
+
+.categories-container, .signature-items, .milk-tea-items, .hot-drink-items {
+display: flex;
+flex-direction: row;
+
+align-items: center;
+margin: 0;
+padding: 0;
+
+
+}
+
+.page-container img {
+    height: auto;
+    max-width: 100%;
+}
+
+.categories-container{
+    margin-top: 20px;
+    background-color: #FDD44C;
+    height: 5em;
+    justify-content: center;
+
+}
+
+.categories-container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    list-style: none;
+}  
+
+.categories button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}

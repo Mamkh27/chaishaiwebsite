@@ -8,59 +8,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <div class="ChaiShaiLogo">
+                <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
+            </div>
+          <div>
+            <ul class="nav-list">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a style="color: white" class="order-online" href="Order.html">ORDER ONLINE</a></li>
+              <!--Cart Button-->
+               <button href="google.com"> <img src="assets/cart.jpeg" width="20" 
+                                                height="20"> </button>
+            </ul>
+          </div>
+         </nav>
+            </header>
+
     <div class="page-container">
   <div class="categories-container">
-    <div class="categories">
-        <button>Signature Drinks</button>
-        <button>Milk Teas</button>
-        <button>Hot Drinks</button>
-        <button>Fruit Teas</button>
-    </div>
-    <div class="categories-marker">
+    <ul class="categories">
+        <li><button>Signature Drinks</button></li>
+        <li><button>Milk Teas</button></li>
+        <li><button>Hot Drinks</button></li>
+        <li><button>Fruit Teas</button></li>
+        
+    </ul>
+    <!-- <div class="categories-marker">
         <h2>_____</h2>
-    </div>
+    </div> -->
   </div>
 
   <!-- Main Drinks Menu -->
   <div class="signature-drinks">
     <h3>SIGNATURE DRINKS</h3>
-    <ul>
+
+    <ul class="signature-items">
         <li>
-            <img src="" alt="">
+            <img src="assets/masala-chai.jpeg" alt="">
             <p>Masala Chai Boba</p>
         </li>
 
         <li>
-            <img src="" alt="">
+            <img src="assets/iced-chai.jpeg" alt="">
             <p>Classic Iced Chai</p>
         </li>
 
         <li>
-            <img src="" alt="">
+            <img src="assets/rose-boba.jpeg" alt="">
             <p>Rose Milk Boba</p>
         </li>
     </ul>
   </div>
 
-  <div class="milk-drinks">
+  <div class="milk-teas">
     <h3>MILK TEAS</h3>
-    <ul>
+    <ul class="milk-tea-items">
         <li>
-            <img src="" alt="">
-            <p>Masala Chai Boba</p>
+            <img src="assets/taro-milk.jpeg" alt="">
+            <p>Taro Milk Tea</p>
         </li>
 
         <li>
-            <img src="" alt="">
-            <p>Classic Iced Chai</p>
+            <img src="assets/tiger-milk-tea.jpeg" alt="">
+            <p>Tiger Milk Tea</p>
         </li>
 
         <li>
-            <img src="" alt="">
-            <p>Rose Milk Boba</p>
+            <img src="assets/thai-milk-tea.jpeg" alt="">
+            <p>Thai Milk Tea</p>
         </li>
     </ul>
   </div>
+
+  <div class="hot-drinks">
+    <h3>HOT DRINKS</h3>
+    <ul class="hot-drink-items">
+        <li>
+            <img src="" alt="">
+            <p>Kashmiri Cocoa</p>
+        </li>
+
+        <li>
+            <img src="" alt="">
+            <p>Classic Chai</p>
+        </li>
+
+        <li>
+            <img src="" alt="">
+            <p>Peppermint Chai</p>
+        </li>
+    </ul>
+  </div>
+
+
   </div>
 
     <script src="script,js"></script>
