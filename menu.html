@@ -31,10 +31,10 @@
     <div class="page-container">
   <div class="categories-container">
     
-        <div><button>Signature Drinks</button></div>
-        <div><button>Milk Teas</button></div>
-        <div><button>Hot Drinks</button></div>
-        <div><button>Fruit Teas</button></div>
+        <div><button href="#down" >Signature Drinks</button></div>
+        <div><button href="#down">Milk Teas</button></div>
+        <div><button href="#down">Hot Drinks</button></div>
+        <div><button href="#down">Fruit Teas</button></div>
         
     
     <!-- <div class="categories-marker">
@@ -119,8 +119,8 @@
     </div>
   </div>
 
-  <div class="fruit-teas">
-    <h3>FRUIT TEAS</h3>
+  <div  class="fruit-teas">
+    <h3 id="down">FRUIT TEAS</h3>
     <div class="fruit-items">
         <div class="menu-item">
             <img src="assets/kashmiri-cocoa.jpeg" alt="">
@@ -141,6 +141,8 @@
   </div>
 
 </div>
-    <script src="script,js"></script>
+    <script src="script,js">
+        <input type="button" onClick="document.getElementById('signature-items').scrollIntoView();" />
+    </script>
 </body>
 </html>
