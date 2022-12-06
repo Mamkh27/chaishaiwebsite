@@ -1,5 +1,10 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 
+@media only screen and (min-width: 600px) {
+.menu-item{
+    flex-basis: 33.33333%;
+}
+}
 .nav,.nav-list {
   font-family: "Jeju Gothic", sans-serif;
   display: flex;
@@ -45,60 +50,118 @@
   color: white;
   border: none;
   color: white;
-
+overflow: hidden;
   text-align: center;
   text-decoration: none;
   border-radius:45px;
-
- 
 }
 
 .ChaiShaiLogo img{
   width:130px;
   height: auto;
+}
+
+.boba-landing img{
+  width:100%;
+  max-height: 450px;
+  margin:0;
+  padding:0;
+  object-fit: cover;
+}
+
+.popular-drinks {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.list-padding {
+  padding: 0;
+}
+
+.popular-drinks img {
+      height: 200px;
+      width: 200px;
+    border-radius:50%;
+}
+
+.home-page-container h2, h3{
+  font-family: "Jeju Gothic", sans-serif;
+
+}
+
+.drink-item {
+
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.drink-item img {
+    object-fit: cover;
+}
+
+.explore-menu {
+ margin: 50;
+  width: 50%;
+  border: 3px solid Blue;
+  text-align: center;
+}
 
 
+.pop-drink-banner{
+   height: 75px;
+  width: 100%;
+  background-color: #f10e60;
+  position: relative;
+  color: white;
+  margin-top: 0%;
+  
   
 }
 
-.boba-landing img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
+/* Menu Page CSS */
 .categories-container, .signature-items, .milk-tea-items, .hot-drink-items {
 display: flex;
 flex-direction: row;
-
 align-items: center;
 margin: 0;
 padding: 0;
+}
 
-
+.page-container {
+    font-family: "Jeju Gothic", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;   
 }
 
 .page-container img {
     height: auto;
     max-width: 100%;
+    border-radius: 50%;
+}
+
+.page-container h3 {
+    margin-left: 1em;
+    font-size: 1.5em;
+    color: #c7034b
 }
 
 .categories-container{
-    
-    
     background-color: #ddac0b;
     height: 4em;
     justify-content: space-around;
-    
-  
     box-shadow: 0px 3px 5px #b8b8b8;
-
-    
     position: relative;
-
-
-    
-
 }
 
 .categories-container button{
@@ -109,19 +172,10 @@ padding: 0;
     font-family: "Jeju Gothic", sans-serif;
     font-size: 1.2em;
     color: white;
-   
 }
  
 
-.page-container {
-    /* background-color: #FFC325; */
-    font-family: "Jeju Gothic", sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 
-    
-}
 .categories-container button::after {
   background-color: #c7034b;
   content: "";
@@ -136,45 +190,32 @@ padding: 0;
 .categories-container button:hover::after {
   width: 100%;
 }
-.page-container h3 {
-    margin-left: 1em;
-    font-size: 1.5em;
-    color: #c7034b
-}
+
+
+
 .menu-page{
     width: 100%;
     margin: 0;
     padding: 0;
+}
 
-}
-.page-container img {
-    border-radius: 50%;
-}
-.milk-tea-items{
-    display: flex;
-}
 
 .menu-item img{
     width: 200px;
-    height: 200px;
- 
+    height: 200px; 
 }
+
 .menu-item{
     display: inline-block;
     text-align: center;
-    /* flex: 1 0 30%;
-    margin: 5px */
-   
-    box-sizing: border-box;
-   
+    box-sizing: border-box; 
+/*     flex-basis: 33.333333%; */
 }
+
 .signature-items, .milk-tea-items, .hot-drink-items, .fruit-items{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
-
 }
 
 .main-menu{
@@ -186,9 +227,9 @@ html {
   scroll-behavior: smooth;
  }
  
- 
- 
- #down {
-  margin-top: 100%;
-  padding-bottom: 25%;
- } 
+
+.home-page {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
