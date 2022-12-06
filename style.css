@@ -151,8 +151,8 @@ overflow: hidden;
 
 
 .pop-drink-banner{
-   height: 75px;
-  line-height: 75px;;
+   height: 4px;
+  line-height: 75px;
   width: 100%;
   background-color: #f10e60;
   position: relative;
@@ -162,6 +162,7 @@ overflow: hidden;
 }
 .pop-drink-banner p{
   margin-left: 20px;
+  color: black;
 }
 
 /* Menu Page CSS */
@@ -191,7 +192,12 @@ padding: 0;
     font-size: 1.5em;
     color: #c7034b
 }
-
+.divider{
+  height: 4px;
+  line-height: 75px;
+  width: 100%;
+  background-color: #00BFB4;
+}
 .categories-container{
     background-color: #ddac0b;
     height: 4em;
