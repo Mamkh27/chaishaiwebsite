@@ -15,11 +15,11 @@
 }
 
 .nav-list li a {
-  padding: 25px;
+  padding: 20px;
 
   color: black;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 
 .nav-list button {
@@ -49,11 +49,15 @@
   background-color: #f10e60;
   color: white;
   border: none;
-  color: white;
 overflow: hidden;
   text-align: center;
   text-decoration: none;
   border-radius:45px;
+}
+
+.about-us{
+  background-color: #FFC325;
+  height: 400px
 }
 
 .ChaiShaiLogo img{
@@ -67,6 +71,7 @@ overflow: hidden;
   margin:0;
   padding:0;
   object-fit: cover;
+  
 }
 
 .popular-drinks {
@@ -78,7 +83,41 @@ overflow: hidden;
   margin: 0;
   padding: 0;
 }
+.explore-menu{
+  color: black;
+  padding: 25px;
+  font-size: 1.1em;
+  font-family: "Jeju Gothic", sans-serif;
+  background-color: white;
+  border: none;
+overflow: hidden;
+  text-align: center;
+  text-decoration: none;
 
+}
+.explore-menu {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  color: #00BFB4;
+} 
+
+.explore-menu:hover {
+  color:white;
+  border: 1px solid;
+  background-color: #00BFB4;
+}
+
+.explore-div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+}
 .list-padding {
   padding: 0;
 }
@@ -109,23 +148,20 @@ overflow: hidden;
     object-fit: cover;
 }
 
-.explore-menu {
- margin: 50;
-  width: 50%;
-  border: 3px solid Blue;
-  text-align: center;
-}
 
 
 .pop-drink-banner{
    height: 75px;
+  line-height: 75px;;
   width: 100%;
   background-color: #f10e60;
   position: relative;
   color: white;
   margin-top: 0%;
-  
-  
+  bottom: 28px;
+}
+.pop-drink-banner p{
+  margin-left: 20px;
 }
 
 /* Menu Page CSS */
@@ -190,8 +226,6 @@ padding: 0;
 .categories-container button:hover::after {
   width: 100%;
 }
-
-
 
 .menu-page{
     width: 100%;
