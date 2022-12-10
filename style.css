@@ -36,6 +36,28 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
 }
+.about-us{
+ max-height: 450px;
+  z-index: 998;
+  display: flex;
+  flex-direction: row;
+}
+.about-us img{
+  height:auto;
+width: 350px;
+  display: flex;
+  position: relative;
+  z-index: 999;
+  opacity: 0.4;
+  max-width:100%;
+max-height:100%;
+}
+.about-us-images{
+      display: inline-block;
+  width: 100%;
+
+
+}
 
 .nav-list li a {
   padding: 20px;
@@ -80,9 +102,13 @@ overflow: hidden;
   border-radius:45px;
 }
 
-.about-us{
+.about-us {
   background-color: #FFC325;
-  height: 400px
+  height: 300px;
+}
+
+.about-us p{
+  color: white
 }
 
 .ChaiShaiLogo img{
@@ -237,6 +263,7 @@ margin-right: 10px;
 }
 
 /* Menu Page CSS */
+
 .categories-container, .signature-items, .milk-tea-items, .hot-drink-items {
 display: flex;
 flex-direction: row;
@@ -289,8 +316,6 @@ padding: 0;
     font-size: 1.2em;
     color: white;
 }
- 
-
 
 .categories-container button::after {
   background-color: #c7034b;
@@ -313,7 +338,6 @@ padding: 0;
     padding: 0;
 }
 
-
 .menu-item img{
     width: 200px;
     height: 200px; 
@@ -326,10 +350,21 @@ padding: 0;
 /*     flex-basis: 33.333333%; */
 }
 
+.main-menu h3 {
+  display: inline-block;
+  margin: 2%
+}
+
 .signature-items, .milk-tea-items, .hot-drink-items, .fruit-items{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 2%
+}
+
+.hot-drink-items img{
+  display:inline-block;
+    margin: 5%
 }
 
 .main-menu{
@@ -341,7 +376,6 @@ html {
   scroll-behavior: smooth;
  }
  
-
 .home-page {
   max-width: 100%;
   margin: 0;
