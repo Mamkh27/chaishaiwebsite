@@ -31,10 +31,10 @@
     <div class="page-container">
   <div class="categories-container">
     
-        <div><button href="#down" >Signature Drinks</button></div>
-        <div><button href="#down">Milk Teas</button></div>
-        <div><button href="#down">Hot Drinks</button></div>
-        <div><button href="#down">Fruit Teas</button></div>
+        <div><a href="#signature" >Signature Drinks</a></div>
+        <div><a href="#milk-tea">Milk Teas</a></div>
+        <div><a href="#hot-drink">Hot Drinks</a></div>
+        <div><a href="#fruit-tea">Fruit Teas</a></div>
         
     
     <!-- <div class="categories-marker">
@@ -44,7 +44,7 @@
 <div class="main-menu">
   <!-- Main Drinks Menu -->
   <div class="signature-drinks">
-    <h3>SIGNATURE DRINKS</h3>
+    <h3 id="signature">SIGNATURE DRINKS</h3>
 
     <div class="signature-items">
         <div class="menu-item">
@@ -65,7 +65,7 @@
   </div>
 
   <div class="milk-teas">
-    <h3>MILK TEAS</h3>
+    <h3 id="milk-tea">MILK TEAS</h3>
     <div class="milk-tea-items">
         <div class="menu-item">
             <img src="assets/taro-milk.jpeg" alt="">
@@ -85,7 +85,7 @@
   </div>
 
   <div class="hot-drinks">
-    <h3>HOT DRINKS</h3>
+    <h3 id="hot-drink">HOT DRINKS</h3>
     <div class="hot-drink-items">
         <div class="menu-item">
             <img src="assets/kashmiri-cocoa.jpeg" alt="">
@@ -120,7 +120,7 @@
   </div>
 
   <div  class="fruit-teas">
-    <h3 id="down">FRUIT TEAS</h3>
+    <h3 id="fruit-tea">FRUIT TEAS</h3>
     <div class="fruit-items">
         <div class="menu-item">
             <img src="assets/kashmiri-cocoa.jpeg" alt="">
@@ -144,5 +144,53 @@
     <script src="script,js">
         <input type="button" onClick="document.getElementById('signature-items').scrollIntoView();" />
     </script>
+  
+<!--   Footer -->
+      <footer class="footer">
+            <div class="social-media">
+                <div class="sm-left>">
+                    
+                    <div class="instagram">
+                       <button href="#"> <img src="assets/instagram.png" width="20" height="20"> </button>
+                      <h4> chaishaiofficial </h4>
+                 
+                    </div>
+                    
+                    <div class="twitter">
+                      <button href="#"> <img src="assets/twitter.png" width="20" height="20"> </button>
+                        <h4> chaishaiofficial </h4>
+                        
+                        </div>
+                </div>
+                <div class="sm-right">
+                    <div class="yelp">
+                    <button href="#"> <img src="assets/yelp.png" width="20" height="20"> </button>
+                    <h4> chaishaiofficial </h4>
+                   
+                    </div>
+
+                    <div class="facebook">
+                    <button href="#"> <img src="assets/facebook.png" width="20" height="20"> </button>
+                    <h4> chaishaiofficial </h4>
+              
+                    </div>
+              </div>
+            </div>
+
+            <div class="store-info">
+                <div class="Hours">
+                    <h5 style="font-weight: 600"> Hours </h5>
+                    <p> M-Th 10:00am - 1:00am</p>
+                    <p> F-S 10:00am - 2:00am</p>
+                </div>
+                
+                <div class=" Address">
+                    <h5> Address </h5>
+                    <p> 1055 Main Street 
+                        Manhattan, NY 10026
+                    </p>
+                </div>
+            </div>
+  </footer>
 </body>
 </html>
