@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,6 +27,7 @@ time, mark, audio, video {
     flex-basis: 33.33333%;
 }
 }
+
 .nav,.nav-list {
   font-family: "Jeju Gothic", sans-serif;
   display: flex;
@@ -55,7 +57,9 @@ time, mark, audio, video {
   padding: 0;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 3px 5px #b8b8b8;
 }
+
 
 .nav-list {
   list-style: none;
@@ -87,23 +91,26 @@ overflow: hidden;
 }
 
 .boba-landing img{
+  position: relative;
   width:100%;
   max-height: 450px;
   margin:0;
   padding:0;
   object-fit: cover;
+  z-index: -999;
   
 }
 
 .popular-drinks {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-top: 50px;
 }
+
 .explore-menu{
   color: black;
   padding: 25px;
@@ -114,10 +121,8 @@ overflow: hidden;
 overflow: hidden;
   text-align: center;
   text-decoration: none;
-
-}
-.explore-menu {
-  border: 1px solid;
+  
+    border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(255, 255, 255, .5);
@@ -125,7 +130,8 @@ overflow: hidden;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   color: #00BFB4;
-} 
+
+}
 
 .explore-menu:hover {
   color:white;
@@ -151,7 +157,6 @@ overflow: hidden;
 
 .home-page-container h2, h3{
   font-family: "Jeju Gothic", sans-serif;
-
 }
 
 .drink-item {
@@ -163,27 +168,72 @@ overflow: hidden;
     margin-bottom: 40px;
     margin-right: 50px;
     margin-left: 50px;
+  z-index: 999;
 }
 
 .drink-item img {
     object-fit: cover;
 }
 
-
-
 .pop-drink-banner{
    height: 4px;
   line-height: 75px;
   width: 100%;
-  background-color: #f10e60;
+/*   background-color: #f10e60; */
   position: relative;
   color: white;
   margin-top: 0%;
-  bottom: 28px;
+  bottom: 5px;
+  font-size: 1.5em;
 }
+
 .pop-drink-banner p{
   margin-left: 20px;
   color: black;
+}
+
+/* Footer Start */
+.footer {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 -5px 6px rgba(0,0,0,0.2)
+}
+
+.social-media{
+  display:flex;
+
+  margin: 0 1.5%;
+  width: 63%;
+  justify-content: space-around;
+}
+.store-info{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.instagram, .twitter, .yelp, .facebook{
+  display: flex;
+  flex-direction: row;
+  margin: 1.5%;
+  padding: 2px;
+  
+  float: left
+}
+
+.footer button{
+padding: 0;
+border: none;
+background: none;
+margin-right: 10px;
+}
+
+.footer h5{
+  font-weight: bold;
 }
 
 /* Menu Page CSS */
@@ -214,10 +264,13 @@ padding: 0;
     color: #c7034b
 }
 .divider{
-  height: 4px;
-  line-height: 75px;
+  height: 100px;
+ position: absolute;
   width: 100%;
-  background-color: #00BFB4;
+  background-color: #FF5193;
+  z-index: -999; 
+  margin-top: 135px;
+
 }
 .categories-container{
     background-color: #ddac0b;
