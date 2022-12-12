@@ -8,25 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="menu-page">
-    <header>
-        <nav class="nav">
-            <div class="ChaiShaiLogo">
-                <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
-            </div>
-          <div>
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a style="color: white" class="order-online" href="Order.html">ORDER ONLINE</a></li>
-              <!--Cart Button-->
-               <button href="google.com"> <img src="assets/cart.jpeg" width="20" 
-                                                height="20"> </button>
-            </ul>
-          </div>
-         </nav>
-            </header>
+   
+    <!--Nav Bar-->
+  <header>
+    <nav class="nav">
+      <div class="ChaiShaiLogo">
+        <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="responsive-nav"><a href="index.html">HOME</a></li>
+          <li class="responsive-nav"> <a href="menu.html">MENU</a></li>
+          <li class="responsive-nav"><a href="contact.html">CONTACT</a></li>
+          <li class="responsive-nav"><a href="about.html">ABOUT</a></li>
+          <li class="responsive-nav"><a style="color: white" class="order-online" href="Order.html">ORDER ONLINE</a></li>
+          <!--Cart Button-->
+          <button class="responsive-nav" href="google.com"> <img src="assets/cart.jpeg" width="20" height="20"> </button>   
+          <span class="mobile-menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+      </div> 
+          
+ <!--Mobile Nav Bar-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="#down">ABOUT</a>
+        <a  href="Order.html">ORDER ONLINE</a>
+        <a href="#down">CART</a>
+      </div>
+   </div>
+ </nav>
+</header>
+
 
     <div class="page-container">
   <div class="categories-container">
@@ -35,7 +51,7 @@
         <div><a href="#milk-tea">Milk Teas</a></div>
         <div><a href="#hot-drink">Hot Drinks</a></div>
         <div><a href="#fruit-tea">Fruit Teas</a></div>
-        
+ 
     
     <!-- <div class="categories-marker">
         <h2>_____</h2>
@@ -44,9 +60,12 @@
 <div class="main-menu">
   <!-- Main Drinks Menu -->
   <div class="signature-drinks">
-    <h3 id="signature">SIGNATURE DRINKS</h3>
-
+    <div>
+    <h3 class="line"  id="signature">SIGNATURE DRINKS</h3>
+       
+</div>
     <div class="signature-items">
+      
         <div class="menu-item">
             <img src="assets/masala-chai.jpeg" alt="">
             <p>Masala Chai Boba</p>
@@ -65,7 +84,7 @@
   </div>
 
   <div class="milk-teas">
-    <h3 id="milk-tea">MILK TEAS</h3>
+    <h3 class="line" id="milk-tea">MILK TEAS</h3>
     <div class="milk-tea-items">
         <div class="menu-item">
             <img src="assets/taro-milk.jpeg" alt="">
@@ -85,7 +104,7 @@
   </div>
 
   <div class="hot-drinks">
-    <h3 id="hot-drink">HOT DRINKS</h3>
+    <h3 class="line" id="hot-drink">HOT DRINKS</h3>
     <div class="hot-drink-items">
         <div class="menu-item">
             <img src="assets/kashmiri-cocoa.jpeg" alt="">
@@ -120,7 +139,7 @@
   </div>
 
   <div  class="fruit-teas">
-    <h3 id="fruit-tea">FRUIT TEAS</h3>
+    <h3 class="line"  id="fruit-tea">FRUIT TEAS</h3>
     <div class="fruit-items">
         <div class="menu-item">
             <img src="assets/kashmiri-cocoa.jpeg" alt="">
