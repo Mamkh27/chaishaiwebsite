@@ -22,24 +22,91 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 .menu-item{
     flex-basis: 33.33333%;
 }
+.mobile-menu-btn{
+  display: none;
 }
-
+}
 /* FIX ME */
 /* FIX FOOTER ON MOBILE */
 @media only screen and (max-width: 1035px) {
   .about-us img{
 display: none;
   }
-  
-/*   .footer {
-  flex-direction: column;
-} */
+
 
 }
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+      .order-online{
+    display: none;
+  } 
+
+  .responsive-nav{
+    display: none;
+  }
+}
+  /* Nav Hamburger Menu */
+  /* The Overlay (background) */
+.overlay {
+  font-family: "Jeju Gothic", sans-serif;
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 
 .nav,.nav-list {
   font-family: "Jeju Gothic", sans-serif;
@@ -149,7 +216,6 @@ overflow: hidden;
   padding:0;
   object-fit: cover;
   z-index: -999;
-  
 }
 
 .popular-drinks {
@@ -304,6 +370,18 @@ margin-right: 10px;
 }
 
 /* Menu Page CSS */
+.line {
+
+border-bottom: 1px solid rgba(0,0,0,0.1);
+/* color: #f10e60; */
+width: 100%;
+top: 50px;
+}
+
+.drink-header{
+  margin: 0;
+  padding: 0;
+}
 
 .categories-container, .signature-items, .milk-tea-items, .hot-drink-items {
 display: flex;
@@ -329,7 +407,7 @@ padding: 0;
 .page-container h3 {
     margin-left: 1em;
     font-size: 1.5em;
-    color: #c7034b
+    color: #f10e60
 }
 .divider{
   height: 100px;
@@ -423,4 +501,53 @@ html {
   max-width: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Contacts Page */
+
+div.gallery {
+  border: 1px solid 000;
+}
+
+div.gallery:hover {
+  border: 1px solid 000;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
