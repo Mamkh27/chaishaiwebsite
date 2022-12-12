@@ -7,24 +7,38 @@
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-<nav class="nav">
-            <div class="ChaiShaiLogo">
-                <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
-            </div>
-          <div>
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="#down">ABOUT</a></li>
-                <li><a style="color: white" class="order-online" href="Order.html">ORDER ONLINE</a></li>
-              <!--Cart Button-->
-               <button href="google.com"> <img src="assets/cart.jpeg" width="20" 
-                                                height="20"> </button>
-            </ul>
-          </div>
-         </nav>
+   <!--Nav Bar-->
+  <header>
+    <nav class="nav">
+      <div class="ChaiShaiLogo">
+        <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="responsive-nav"><a href="index.html">HOME</a></li>
+          <li class="responsive-nav"> <a href="menu.html">MENU</a></li>
+          <li class="responsive-nav"><a href="contact.html">CONTACT</a></li>
+          <li class="responsive-nav"><a href="about.html">ABOUT</a></li>
+          <li class="responsive-nav"><a style="color: white" class="order-online" href="Order.html">ORDER ONLINE</a></li>
+          <!--Cart Button-->
+          <button class="responsive-nav" href="google.com"> <img src="assets/cart.jpeg" width="20" height="20"> </button>   
+          <span class="mobile-menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+      </div> 
+          
+ <!--Mobile Nav Bar-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="#down">ABOUT</a>
+        <a  href="Order.html">ORDER ONLINE</a>
+        <a href="#down">CART</a>
+      </div>
+   </div>
+ </nav>
 </header>
 <body>
   <div class="about-us">
@@ -39,7 +53,59 @@
   </div>
   
   <div class="image gallery">
-    
+    <h2>Welcome to our store</h2>
+
+<h4>See Chai Shai in action!</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="" alt="Our Store" width="600" height="400">
+    </a>
+    <div class="desc">Our Store</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="" alt="Interior" width="600" height="400">
+    </a>
+    <div class="desc">Interior</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="" alt="Vibes" width="600" height="400">
+    </a>
+    <div class="desc">Vibes</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="" alt="BTshop" width="600" height="400">
+    </a>
+    <div class="desc">Chai Shai</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>
+
+
+
   </div>
   
 </body>
