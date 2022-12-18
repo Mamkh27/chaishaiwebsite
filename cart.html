@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Your Cart</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
-<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
    <!--Nav Bar-->
-   <header>
-    <nav>
-        <div class="ChaiShaiLogo">
-            <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
-        <div>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Order.html">Order Online</a></li>
-        <ul>
-            <!--Cart Button-->
-            <button href="google.com"> <img src="assets/cart.jpeg" width="20" height="20"> Cart</button>
+  <header>
+    <nav class="nav">
+      <div class="ChaiShaiLogo">
+        <img src="assets/Boba Logo.png" alt="Logo" width="200" height="100">
+      </div>
+      <div>
+        <ul class="nav-list">
+          <li class="responsive-nav"><a href="index.html">HOME</a></li>
+          <li class="responsive-nav"> <a href="menu.html">MENU</a></li>
+          <li class="responsive-nav"><a href="contact.html">CONTACT</a></li>
+          <li class="responsive-nav"><a href="cart.html">ABOUT</a></li>
+          <li class="responsive-nav"><a style="color: white" class="order-online" href="cart.html">ORDER ONLINE</a></li>
+          <!--Cart Button-->
+          <button class="responsive-nav" href="google.com"> <img src="assets/cart.jpeg" width="20" height="20"> </button>   
+          <span class="mobile-menu-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+      </div> 
+          
+ <!--Mobile Nav Bar-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="cart.html">ABOUT</a>
+        <a  href="cart.html">ORDER ONLINE</a>
+        <a href="cart.html">CART</a>
+      </div>
+   </div>
+ </nav>
 </header>
-
-
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
-
-</body>
+  <body>
+    <div class="cart-page">
+    <h1>
+       Error 404: Boba Not Found. 
+    </h1>
+    <h2>
+      It looks like this page is still under construction. 
+      Please check back in soon for updates. 
+    </h2>
+   </div>
+  </body>
 </html>
