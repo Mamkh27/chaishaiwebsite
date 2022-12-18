@@ -27,6 +27,10 @@ time, mark, audio, video {
   flex-direction: row;
   width: 100%;
   height:100vh;
+  background-color: #FFC325;
+  color: white;
+  font-family: "Jeju Gothic", sans-serif;
+  font-size: 1.5em;
 }
 .contact-form{
   display: flex;
@@ -36,7 +40,6 @@ time, mark, audio, video {
   justify-content: center;
   height:100% !important;
   width:50%;
-  border:1px solid grey;
   float:left;
 }
 .contact-image{
@@ -45,20 +48,40 @@ time, mark, audio, video {
   width: 100%;
   height:100% !important;
   width:50%;
-  border:1px solid grey;
   float:right;
 
+}
+.contact-img {
+  width:100%;
+  max-height:100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.user-data{
+  display: flex;
+  height: 25%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.user-name-box, .user-email-box{
+  margin-left: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
 }
 
 textarea{
     width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding-left: 12px; /* Some padding */ 
   border: 1px solid #cccccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-top: 10px;
 }
 @media only screen and (min-width: 800px) {
 .menu-item{
