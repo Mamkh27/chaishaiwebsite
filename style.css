@@ -133,8 +133,13 @@ textarea{
 display: none;
   }
 
-
 }
+@media only screen and (max-width: 1016px) {
+  .divider{
+    display: none;
+  }
+}
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -143,15 +148,27 @@ display: none;
     top: 15px;
     right: 35px;
   }
-}
 
+
+}
 @media only screen and (max-width: 800px){
+  .responsive-nav{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 680px){
       .order-online{
     display: none;
   } 
 
-  .responsive-nav{
-    display: none;
+
+
+  .footer > div{
+    display: inline-block;
+    min-width: 30%;
+    justify-content: center;
+
   }
 }
   /* Nav Hamburger Menu */
@@ -391,7 +408,7 @@ overflow: hidden;
 .pop-drink-banner{
    height: 4px;
   line-height: 75px;
-  width: 100%;
+
 /*   background-color: #f10e60; */
   position: relative;
   color: white;
@@ -403,6 +420,7 @@ overflow: hidden;
 .pop-drink-banner p{
   margin-left: 20px;
   color: black;
+
 }
 
 /* Footer Start */
