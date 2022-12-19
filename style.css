@@ -21,6 +21,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+
 /* contact page */
 .contact-page{
   display: flex;
@@ -505,7 +507,7 @@ margin: 0;
 padding: 0;
 }
 
-.page-container {
+.page-container{
     font-family: "Jeju Gothic", sans-serif;
     width: 100%;
     margin: 0;
@@ -606,6 +608,7 @@ padding: 0;
     display: block;
 }
 
+
 /* scrolling code */
 html {
   scroll-behavior: smooth;
@@ -618,25 +621,6 @@ html {
 }
 
 /* Contacts Page */
-
-div.gallery {
-  border: 1px solid 000;
-}
-
-div.gallery:hover {
-  border: 1px solid 000;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -664,4 +648,96 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* About Page */
+.gallery div {
+  display: flex;
+  margin: 5px;
+  border: 1px solid #cccccc;
+  float: left;
+}
+
+.gallery div:hover {
+  border: 1px solid #777777;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* cart page */
+.category-title{
+  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.group1{
+  
+  justify-content: space-between;
+  
+ 
+}
+.group2{
+  justify-content: space-between;
+}
+
+.group3{
+  justify-content: space-between;
+}
+.card{
+  display: flex;
+  max-width: 450px;
+  height: 150px;
+  width: 50px;
+  background-color: pink;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  font-size: 0.2em;
+  align-items: center;
+ 
+}
+
+.card img{
+  height: 120px;
+  width: 120px;
+  border-radius: 0;
+  margin-left: 50px;
+  
+}
+.text-container h3{ 
+font-size: 5em;
+margin-left: 0;
+padding-left: 0;
+}
+.drink-info h1{
+  font-size: 6em;
+  margin-bottom: 5px;
+ 
+
+}
+.drink-info{
+   margin-bottom: 25px;
+}
+.g1-cards, .g2-cards, .g3-cards{
+   display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+
+}
+.g3-cards > div, .g2-cards > div, .g1-cards > div{
+
+  display: flex;
+  flex: 50%;
+  box-shadow: 0 0 0 0.1px aqua;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  justify-content: center;
 }
