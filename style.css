@@ -707,6 +707,22 @@ height: 100vh;
   vertical-align: middle;
 }
 
+.gallery {
+  margin: 6%;
+  border: 1px solid #000000;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
 /* about.html */
 /* * {
   box-sizing: border-box;
@@ -793,6 +809,13 @@ height: 100vh;
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.gallery-block {
+  display: flex;
+  margin: auto;
+  background-color: var(--yellow);
+  border: 1px solid grey
 }
 
 /* cart page */
