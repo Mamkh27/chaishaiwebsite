@@ -1,6 +1,14 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
+/* how to access colors: 
+  color: var(--primary-color); */
+:root {
+  --darkpink: #f10e60;
+  --yellow: #ffc325;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +37,7 @@ time, mark, audio, video {
   flex-direction: row;
   width: 100%;
   height:100vh;
-  background-color: #FFC325;
+  background-color: var(--yellow);
   color: white;
   font-family: "Jeju Gothic", sans-serif;
   font-size: 1.5em;
@@ -107,7 +115,7 @@ textarea{
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #FFC325;
+  background-color: var(--yellow);
   color: white;
   font-family: "Jeju Gothic", sans-serif;
   z-index: -5;
@@ -120,6 +128,9 @@ textarea{
   font-size: 3em;
 
 }
+.cart-page-container{
+  padding: 100px;
+}
 @media only screen and (min-width: 800px) {
 .menu-item{
     flex-basis: 33.33333%;
@@ -128,8 +139,7 @@ textarea{
   display: none;
 }
 }
-/* FIX ME */
-/* FIX FOOTER ON MOBILE */
+
 @media only screen and (max-width: 1035px) {
   .about-us img{
 display: none;
@@ -157,7 +167,19 @@ display: none;
   .responsive-nav{
     display: none;
   }
+  
+.card{
+  display: flex;
+  width: 50px;
+  height: 100px;
+  background-color: red;
+  color: white;
 
+  justify-content: space-between;
+  font-size: 0.2em;
+  align-items: center;
+ flex: 25%;
+}
 }
 @media only screen and (max-width: 680px){
       .order-online{
@@ -166,7 +188,7 @@ display: none;
 
 
 
-  .footer > div{
+.footer > div{
     display: inline-block;
     min-width: 30%;
     justify-content: center;
@@ -235,7 +257,7 @@ display: none;
 .about-us{
   display: flex;
   flex-direction: row;
-  background-color: #FFC325;
+  background-color: var(--yellow);
   height: 300px;
   z-index: 998;
 }
@@ -309,7 +331,7 @@ max-height: 300px;
 }
 
 .order-online {
-  background-color: #f10e60;
+  background-color: var(--darkpink) ;
   color: white;
   border: none;
 overflow: hidden;
@@ -432,14 +454,20 @@ overflow: hidden;
   justify-content:space-around;
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 15px;
-  position: relative;
-  box-shadow: 0 -5px 6px rgba(0,0,0,0.2)
+  position: absolute;
+  bottom:0;
+  height:100px;   
+  box-shadow: 0 -5px 6px rgba(0,0,0,0.2);
+  width: 100%;
+  background-color: white;
+
+    
 }
 
 .footer-divs {
   display: flex;
   flex-direction: row;
-
+  
 }
 
 .social-media{
@@ -455,7 +483,6 @@ overflow: hidden;
   justify-content: space-evenly;
   float:left;
 }
-
 
 .Hours{
   padding-right: 30px;
@@ -507,14 +534,25 @@ margin: 0;
 padding: 0;
 }
 
-.page-container{
+.page-container, .cart-page-container{
     font-family: "Jeju Gothic", sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: 0;   
+    width: 100%;  
 }
 
-.page-container img {
+ .cart-page-container img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.cart-page-container h3 {
+    margin-left: 1em;
+    font-size: 1.5em;
+    color: var(--darkpink);
+}
+
+
+.page-container  img {
     height: auto;
     max-width: 100%;
     border-radius: 50%;
@@ -523,7 +561,7 @@ padding: 0;
 .page-container h3 {
     margin-left: 1em;
     font-size: 1.5em;
-    color: #f10e60
+    color: var(--darkpink);
 }
 .divider{
   height: 100px;
@@ -651,16 +689,35 @@ html {
 }
 
 /* About Page */
-.gallery div {
-  display: flex;
-  margin: 5px;
-  border: 1px solid #cccccc;
-  float: left;
+
+.about-page-container {
+background-color: var(--yellow);
+height: 100vh;
 }
 
-.gallery div:hover {
+.CSblurb h2{
+  display: flex;
+  text-align: center
+    
+}
+
+.CSblurb p{
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gallery {
+  margin: 6%;
+  border: 1px solid #000000;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
   border: 1px solid #777777;
 }
+
 .gallery img {
   width: 100%;
   height: auto;
@@ -669,6 +726,13 @@ html {
 .desc {
   padding: 15px;
   text-align: center;
+}
+
+.gallery-block {
+  display: flex;
+  margin: auto;
+  background-color: var(--yellow);
+  border: 1px solid grey
 }
 
 /* cart page */
@@ -681,7 +745,6 @@ html {
   
   justify-content: space-between;
   
- 
 }
 .group2{
   justify-content: space-between;
@@ -692,9 +755,8 @@ html {
 }
 .card{
   display: flex;
-  max-width: 450px;
+  max-width: 600px;
   height: 150px;
-  width: 50px;
   background-color: pink;
   color: white;
   padding-left: 20px;
@@ -702,7 +764,7 @@ html {
   justify-content: space-between;
   font-size: 0.2em;
   align-items: center;
- 
+ flex: 25%;
 }
 
 .card img{
@@ -712,19 +774,21 @@ html {
   margin-left: 50px;
   
 }
+
 .text-container h3{ 
 font-size: 5em;
 margin-left: 0;
 padding-left: 0;
 }
+
 .drink-info h1{
   font-size: 6em;
   margin-bottom: 5px;
- 
-
 }
+
 .drink-info{
    margin-bottom: 25px;
+  
 }
 .g1-cards, .g2-cards, .g3-cards{
    display: flex;
@@ -740,4 +804,13 @@ padding-left: 0;
   margin-bottom: 10px;
   margin-left: 10px;
   justify-content: center;
+}
+
+.all-page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+.everything-but-footer{
+  padding-bottom: 100px;
 }
