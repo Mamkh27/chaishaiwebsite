@@ -45,13 +45,26 @@
 </header>
 
     <div class="cart-page-container">
+    
+<div class="popup" onclick="myFunction()">
+  <div class="popuptext" id="myPopup">
+    <button>Add to Cart</button>
+       <div class="container-increment">            
+        <!-- adding button and heading to show the digits -->
+        <!--increment() and decrement() functions on button click-->
+            <button onclick="increment()">+</button>
+            <h2 id="counting"></h2>
+            <button onclick="decrement()">-</button>        
+        </div>
+    </div>
+</div>
       <div class="group1">
         <div class="container">
         <h1 class="category-title">
           Signature
         </h1>
         <div class="g1-cards">
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -68,7 +81,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -85,7 +98,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -102,7 +115,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+         <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -130,7 +143,7 @@
           Milk Teas
         </h1>
          <div class="g2-cards">
-          <div class="card">
+         <div id="drink1" class="popup card" onclick="myFunction(drink1)" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -147,7 +160,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div id="drink2" class="popup card" onclick="myFunction(drink2)" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -164,7 +177,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div id="drink3" class="popup card" onclick="myFunction(drink3)" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -181,7 +194,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div id="drink4" class="popup card" onclick="myFunction(drink4)" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -198,7 +211,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -225,7 +238,7 @@
           Category 3
         </h1>
          <div class="g3-cards">
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -242,7 +255,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
         </div>
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
@@ -259,7 +272,7 @@
            <img style="background-color: lightgrey" src="assets/iced-chai.jpeg">
           
           </div>
-          <div class="card">
+          <div class="popup card" onclick="myFunction()" >
             <div class="text-container">
             <div class="drink-info">
             <h1>
