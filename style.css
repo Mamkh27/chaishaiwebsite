@@ -707,22 +707,6 @@ height: 100vh;
   vertical-align: middle;
 }
 
-.gallery {
-  margin: 6%;
-  border: 1px solid #000000;
-  float: left;
-  width: 180px;
-}
-
-.gallery:hover {
-  border: 1px solid #777777;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
 /* about.html */
 /* * {
   box-sizing: border-box;
@@ -811,13 +795,6 @@ height: 100vh;
   opacity: 1;
 }
 
-.gallery-block {
-  display: flex;
-  margin: auto;
-  background-color: var(--yellow);
-  border: 1px solid grey
-}
-
 /* cart page */
 .category-title{
   margin-bottom: 30px;
@@ -896,4 +873,61 @@ padding-left: 0;
 
 .everything-but-footer{
   padding-bottom: 100px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555555;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
